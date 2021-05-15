@@ -59,7 +59,7 @@
                     <option value="" class="dropdown-item">Small</option>
                 </select> <br>  
                 <input type="number" value="1" class="inp mb-4">
-                <a href="cart.html" class="text-decoration-none"><button type="button" class="btn mb-2 cart text-white pl-4 pr-4 ml-2">Add To Cart</button></a>
+                <a href="cart.php" class="text-decoration-none"><button type="button" class="btn mb-2 cart text-white pl-4 pr-4 ml-2">Add To Cart</button></a>
                 <h4 class="font-weight-bold mb-3">Product Details</h4>
                 <p class="text-muted textp">Give your Summer wardrobe a style upgrade with the HRX Men's active T-Shirt. Team it with a pair of shorts of your 
                     morning workout or a denims for a evening out with the guys. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim consectetur exercitationem cumque aperiam veniam voluptas, natus sequi beatae minus aspernatur. 
