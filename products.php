@@ -41,7 +41,7 @@
         </div>
         <div class="row c_3 c_14">
             <div class="col-12 col-sm-3 mb-5">
-                <a href="product1.html" class="text-decoration-none">
+                <a href="product1.php" class="text-decoration-none">
                     <div class="card border-0">
                         <div class="card-img">
                             <img src="images/product-1.jpg" class="img-fluid d-block w-100">
@@ -53,7 +53,7 @@
                 </a>
             </div>
             <div class="col-12 col-sm-3 mb-5">
-                <a href="product1.html" class="text-decoration-none">
+                <a href="product1.php" class="text-decoration-none">
                     <div class="card border-0">
                         <div class="card-img">
                             <img src="images/product-2.jpg" class="img-fluid d-block">
@@ -65,7 +65,7 @@
                 </a>
             </div>
             <div class="col-12 col-sm-3 mb-5">
-                <a href="product1.html" class="text-decoration-none">
+                <a href="product1.php" class="text-decoration-none">
                     <div class="card border-0 mb-4">
                         <div class="card-img">
                             <img src="images/product-3.jpg" class="img-fluid d-block">
@@ -77,7 +77,7 @@
                 </a>
             </div>
             <div class="col-12 col-sm-3 mb-5">
-                <a href="product1.html" class="text-decoration-none">
+                <a href="product1.php" class="text-decoration-none">
                     <div class="card border-0">
                         <div class="card-img">
                             <img src="images/product-4.jpg" class="img-fluid d-block">
@@ -95,7 +95,7 @@
     <div class="container">
         <div class="row c_3">
             <div class="col-sm-3 mb-4">
-                <a href="product1.html" class="text-decoration-none">
+                <a href="product1.php" class="text-decoration-none">
                     <div class="card border-0 mb-4">
                         <div class="card-img">
                             <img src="images/product-5.jpg" class="img-fluid d-block">
@@ -107,7 +107,7 @@
                 </a>
             </div>
             <div class="col-12 col-sm-3 mb-4">
-                <a href="product1.html" class="text-decoration-none">
+                <a href="product1.php" class="text-decoration-none">
                     <div class="card border-0 mb-4">
                         <div class="card-img">
                             <img src="images/product-6.jpg" class="img-fluid d-block">
@@ -119,7 +119,7 @@
                 </a>
             </div>
             <div class="col-12 col-sm-3 mb-4">
-                <a href="product1.html" class="text-decoration-none">
+                <a href="product1.php" class="text-decoration-none">
                     <div class="card border-0 mb-4">
                         <div class="card-img">
                             <img src="images/product-7.jpg" class="img-fluid d-block">
@@ -131,7 +131,7 @@
                 </a>
             </div>
             <div class="col-12 col-sm-3 mb-4">
-                <a href="product1.html" class="text-decoration-none">
+                <a href="product1.php" class="text-decoration-none">
                     <div class="card border-0 mb-4">
                         <div class="card-img">
                             <img src="images/product-8.jpg" class="img-fluid d-block">
@@ -143,7 +143,7 @@
                 </a>
             </div>
             <div class="col-12 col-sm-3">
-                <a href="product1.html" class="text-decoration-none">
+                <a href="product1.php" class="text-decoration-none">
                     <div class="card border-0 mb-4">
                         <div class="card-img">
                             <img src="images/product-9.jpg" class="img-fluid d-block">
@@ -155,7 +155,7 @@
                 </a>
             </div>
             <div class="col-12 col-sm-3">
-                <a href="product1.html" class="text-decoration-none">
+                <a href="product1.php" class="text-decoration-none">
                     <div class="card border-0 mb-4">
                         <div class="card-img">
                             <img src="images/product-10.jpg" class="img-fluid d-block">
@@ -167,7 +167,7 @@
                 </a>
             </div>
             <div class="col-12 col-sm-3">
-                <a href="product1.html" class="text-decoration-none">
+                <a href="product1.php" class="text-decoration-none">
                     <div class="card border-0 mb-4">
                         <div class="card-img">
                             <img src="images/product-11.jpg" class="img-fluid d-block">
@@ -179,7 +179,7 @@
                 </a>
             </div>
             <div class="col-12 col-sm-3 mb-5">
-                <a href="product1.html" class="text-decoration-none">
+                <a href="product1.php" class="text-decoration-none">
                     <div class="card border-0">
                         <div class="card-img">
                             <img src="images/product-12.jpg" class="img-fluid d-block">
