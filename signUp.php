@@ -27,9 +27,9 @@
 <body>    
     <!--Top bar-->
     <!-- header part code -->
-    <?php
-        include_once 'header.php';
-    ?>
+    <div class="navbar navbar-light navbar-expand-md" style="background-color: rgb(255,227,225);">
+        <h1 class="navbar-brand"><a class="text-decoration-none" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; cursor:pointer;"><i class="fab fa-bootstrap text-danger mr-2"></i><span style="color: rgb(231,150,130);" class="b_1">BHAR</span><span style="color: rgb(90,75,73);" class="b_1">GAV'S</span></a></h1>
+    </div>
     <!--Front Two Column-->
     <div class="container-fluid" style="background-color: rgb(255,227,225); background: radial-gradient(#fff,#ffd6d6);">
         <div class="container">
@@ -50,7 +50,7 @@
                                             <i class="fas fa-envelope-square"></i>
                                         </div>
                                         <div class="col-8 pl-0">
-                                            <input type="text" placeholder="Name" autocomplete="off" name="Name" class="w-100">
+                                            <input type="text" placeholder="Name" autocomplete="off" name="Name" class="w-100" required>
                                         </div>
                                     </div>
                                     <div class="row mb-3">
@@ -58,7 +58,7 @@
                                             <i class="fas fa-envelope-square"></i>
                                         </div>
                                         <div class="col-8 pl-0">
-                                            <input type="email" autocomplete="off" placeholder="Email-Id" name="email" class="w-100">
+                                            <input type="email" autocomplete="off" placeholder="Email-Id" name="email" class="w-100" required>
                                         </div>
                                     </div>
                                     <div class="row mb-3">
@@ -66,7 +66,7 @@
                                             <i class="fas fa-key"></i>
                                         </div>
                                         <div class="col-8 pl-0">
-                                            <input type="password" placeholder="Password" name="pass" class="w-100">
+                                            <input type="password" placeholder="Password" name="pass" class="w-100" required>
                                         </div>
                                     </div>
                                     <div class="row mb-3">
@@ -74,7 +74,7 @@
                                             <i class="fas fa-key"></i>
                                         </div>
                                         <div class="col-8 pl-0">
-                                            <input type="password" placeholder="Repeat Password" name="pass1"class="w-100">
+                                            <input type="password" placeholder="Repeat Password" name="pass1"class="w-100" required>
                                         </div>
                                     </div>
                                     <div class="row mb-3">
@@ -111,12 +111,12 @@
                 $result = mysqli_query($conn,$query);
                 if($result)
                 {
-                    header("Location:account.php");
                     echo "
-                            <script>
-                                alert('Your Account is Created.');
-                            </script>
-                        ";
+                    <script>
+                    alert('Your Account is Created.');
+                    window.location.href = 'index.php';
+                    </script>
+                    ";
                         
                 }
             }
@@ -131,47 +131,55 @@
         }
 ?>
 
-    <!--Modal-->
-    <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-			<div class="card">
-                <div class="card-body text-center modals bg-white">
-                    <i class="fas fa-quote-left fa-2x mb-3"></i>
-                    <p class="text-muted">I am currently pursuing my Bachelor of Technology in Computer Science and looking for carrer in the field of Computer Science and Technology. I mostly work as a front end web developer well known on HTML5, CSS3, Bootstrap and JavaScript languages.</p>
-                    <i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="far fa-star mb-4"></i>
-                    <img src="images/bhargav.jpg" class="img-fluid d-block mx-auto w-25 mb-1">
-                    <p class="font-weight-bold text-dark">Bhargav Sonagara</p>
+<!--Modal-->
+<?php
+    include_once 'modal.php';
+?>
+
+<!--Footer-->
+<footer style="background-color: rgb(1,0,1);">
+        <div class="container pt-5" style="padding-bottom: 16px;">
+            <div class="row c_6">
+                <div class="col-12 col-sm-3 text-white">
+                    <h4 class="mb-4">Download Our App</h4>
+                    <p class="text-muted mb-4">Download App for Android and ios mobile phone.</p>
+                    <div class="row c_9">
+                        <div class="col-6 col-sm-6">
+                            <a href="#google_play" data-toggle="modal" class="text-decoration-none"><img src="images/play-store.png" class="img-fluid d-block"></a>
+                        </div>
+                        <div class="col-6 col-sm-6">
+                            <a href="#google_play" data-toggle="modal" class="text-decoration-none"><img src="images/app-store.png" class="img-fluid d-block img_5"></a>
+                        </div>
+                    </div>      
+                </div>
+                <div class="col-12 col-sm-3 text-white text-center c_10">
+                    <h1 class="footer-brand mb-4"><a class="text-decoration-none text-white" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; cursor:pointer;"><i class="fab fa-bootstrap mr-2"></i><span class="b_2">BHAR</span><span class="b_2">GAV'S</span></a></h1>
+                    <p class="text-muted mb-4">our Purpose is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+                </div>
+                <div class="col-12 col-sm-3 text-white text-center">
+                    <h4 class="mb-4">Useful Links</h4>
+                    <p class="c_11">
+                        <a href="#google_play" data-toggle="modal" class="text-decoration-none text-muted">Coupons</a><br>
+                        <a href="#google_play" data-toggle="modal" class="text-decoration-none text-muted">Blog Post</a><br>
+                        <a href="#google_play" data-toggle="modal" class="text-decoration-none text-muted">Return Policy</a><br>
+                        <a href="#google_play" data-toggle="modal" class="text-decoration-none text-muted">Join Affiliate</a>
+                    </p>
+                </div>
+                <div class="col-12 col-sm-3 text-white text-center">
+                    <h4 class="mb-4">Follow Us</h4>
+                    <p class="c_11">
+                        <a href="https://www.facebook.com/bhargav.sonagra" class="text-decoration-none text-muted">Facebook</a><br>
+                        <a href="https://twitter.com/BhargavSonagar2" class="text-decoration-none text-muted">Twitter</a><br>
+                        <a href="https://www.instagram.com/sonagara_bhargav/" class="text-decoration-none text-muted">Instagram</a><br>
+                        <a href="https://www.youtube.com/channel/UC-rA33_DgEXdazJMwTIPaSw" class="text-decoration-none text-muted">Youtube</a><br>
+                        <a href="https://www.linkedin.com/in/bhargavsonagara/" class="text-decoration-none text-muted">Linkedin</a>
+                    </p>
                 </div>
             </div>
-		</div>
-    </div>
-
-
-    <!-- Modal -->
-    <div class="modal fade" id="google_play" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">Sorry...</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-            </div>
-            <div class="modal-body">
-            Our Team Working On It.
-            </div>
-            <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
+            <hr class="hr_2">
+            <p class="text-center text-muted p_1 pb-1" style="margin-bottom: -8px">Copyright &copy; 2020 - Designed and Developed by <a class="text-decoration-none text-muted">BHARGAV'S</a></p>
         </div>
-        </div>
-    </div>
-
-    <!--Footer-->
-    <?php
-        include_once 'footer.php';
-    ?>
-
+    </footer>
 
     <!--jquery Script Link-->
     <script src="js/jquery-3.5.1.js"></script>

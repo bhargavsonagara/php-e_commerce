@@ -14,7 +14,7 @@
                     </div>      
                 </div>
                 <div class="col-12 col-sm-3 text-white text-center c_10">
-                    <h1 class="footer-brand mb-4"><a href="index.php" class="text-decoration-none text-white" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><i class="fab fa-bootstrap mr-2"></i><span class="b_2">BHAR</span><span class="b_2">GAV'S</span></a></h1>
+                    <h1 class="footer-brand mb-4"><a href="home.php" class="text-decoration-none text-white" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><i class="fab fa-bootstrap mr-2"></i><span class="b_2">BHAR</span><span class="b_2">GAV'S</span></a></h1>
                     <p class="text-muted mb-4">our Purpose is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
                 </div>
                 <div class="col-12 col-sm-3 text-white text-center">
@@ -38,6 +38,6 @@
                 </div>
             </div>
             <hr class="hr_2">
-            <p class="text-center text-muted p_1 pb-1" style="margin-bottom: -8px">Copyright &copy; 2020 - Designed and Developed by <a href="index.php" class="text-decoration-none text-muted">BHARGAV'S</a></p>
+            <p class="text-center text-muted p_1 pb-1" style="margin-bottom: -8px">Copyright &copy; 2020 - Designed and Developed by <a href="home.php" class="text-decoration-none text-muted">BHARGAV'S</a></p>
         </div>
     </footer>

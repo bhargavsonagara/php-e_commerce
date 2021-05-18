@@ -1,15 +1,18 @@
+<?php
+    
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - E-commerce WEB</title>
+    <title>E-commerce WEB</title>
     <!--Bootstrap Style Link-->
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
 
     <!--Custom Style Link-->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="productStyle.css">
 
     <!--Font Awesome Style Link-->
     <link rel="stylesheet" href="CSS/all.css">
@@ -19,28 +22,49 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <!--Top bar-->
+    <!-- header part code -->
     <?php
         include_once 'header.php';
     ?>
-    <div class="container">
-        <div class="row c_13">
-            <div class="">
-                <h4 class="font-weight-bold">All Products</h4>
-            </div>
-            <div class="ml-auto">
-                <select class="dropdown btn btn-light" aria-haspopup="true" aria-labelledby="false">
-                    <option value="" class="dropdown-item">Defaut Shorting</option>
-                    <option value="" class="dropdown-item">Short by price</option>
-                    <option value="" class="dropdown-item">Short by popularity</option>
-                    <option value="" class="dropdown-item">Short by rating</option>
-                    <option value="" class="dropdown-item">Short by sale</option>
-                </select>
+
+    <!--Front Two Column-->
+    <div class="container-fluid" style="background-color: rgb(255,227,225); background: radial-gradient(#fff,#ffd6d6);">
+        <div class="container">
+            <div class="row c_1">
+                <div class="col-12 col-sm-6 my-auto">
+                    <h1 class="">Give Your Workout A New Style!</h1>
+                    <p class="text-muted mt-2">Success isn't always about greatness.it's about consistency.Consistent hard work gains success. Greatness will come.</p>
+                    <button type="button" class="btn btn-warning mt-2" data-target="#explore" data-toggle="modal"><span class="mx-2">Explore Now<i class="fas fa-long-arrow-alt-right ml-1"></i></span></button>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <img src="images/image1.png" class="img-fluid d-block img_6">
+                </div>
             </div>
         </div>
-        <div class="row c_3 c_14">
-            <div class="col-12 col-sm-3 mb-5">
+    </div>
+    
+    <!--Three Column Images-->
+    <div class="container c_2" style="max-width: 900px;">
+        <div class="row">
+            <div class="col-6 col-sm-4">
+                <img src="images/category-3.jpg" class="img-fluid d-block img_4 mb-4">
+            </div>
+            <div class="col-6 col-sm-4">
+                <img src="images/category-2.jpg" class="img-fluid d-block img_2 mb-4">
+            </div>
+            <div class="col-6 col-sm-4">
+                <img src="images/category-1.jpg" class="img-fluid d-block img_3">
+            </div>
+        </div>
+    </div>
+    
+    <!--Featured Products-->
+    <h4 class="text-center font-weight-bold c_8">Featured Products</h4>
+    <hr class="hr_1">
+
+    <div class="container" style="max-width: 900px;">
+        <div class="row c_3">
+            <div class="col-12 col-sm-3">
                 <a href="product1.php" class="text-decoration-none">
                     <div class="card border-0">
                         <div class="card-img">
@@ -52,14 +76,14 @@
                     </div>
                 </a>
                 <form action="manage_cart.php" method="POST">
-                    <div>
+                    <div class="mb-4">
                         <button type="submit" class="btn btn-outline-danger btn-sm mb-2 cart mt-2" name="Add_To_Cart">Add To Cart</button>
                         <input type="hidden" name="Item_Name" value="Red Printed T-Shirt by HRX">
                         <input type="hidden" name="Price" value="$50">
                     </div>
                 </form>
-            </div>      
-            <div class="col-12 col-sm-3 mb-5">
+            </div>
+            <div class="col-12 col-sm-3">
                 <a href="product1.php" class="text-decoration-none">
                     <div class="card border-0">
                         <div class="card-img">
@@ -71,14 +95,14 @@
                     </div>
                 </a>
                 <form action="manage_cart.php" method="POST">
-                    <div>
+                    <div class="mb-4">
                         <button type="submit" class="btn btn-outline-danger btn-sm mb-2 cart mt-2" name="Add_To_Cart">Add To Cart</button>
-                        <input type="hidden" name="Item_Name" value="HRX Sports Shoes">
+                        <input type="hidden" name="Item_Name" value="$HRX Sports Shoes">
                         <input type="hidden" name="Price" value="$75">
                     </div>
                 </form>
             </div>
-            <div class="col-12 col-sm-3 mb-5">
+            <div class="col-12 col-sm-3">
                 <a href="product1.php" class="text-decoration-none">
                     <div class="card border-0">
                         <div class="card-img">
@@ -90,7 +114,7 @@
                     </div>
                 </a>
                 <form action="manage_cart.php" method="POST">
-                    <div>
+                    <div class="mb-4">
                         <button type="submit" class="btn btn-outline-danger mb-2 btn-sm cart mt-2" name="Add_To_Cart">Add To Cart</button>
                         <input type="hidden" name="Item_Name" value="HRX Gray Trackpants">
                         <input type="hidden" name="Price" value="$45">
@@ -119,10 +143,13 @@
         </div>
     </div>
 
-   
-    <div class="container">
+    <!--Latest Products-->
+    <h4 class="text-center font-weight-bold c_8">Latest Products</h4>
+    <hr class="hr_1">
+
+    <div class="container" style="max-width: 900px;">
         <div class="row c_3">
-            <div class="col-sm-3 mt-5">
+            <div class="col-sm-3">
                 <a href="product1.php" class="text-decoration-none">
                     <div class="card border-0">
                         <div class="card-img">
@@ -134,14 +161,14 @@
                     </div>
                 </a>
                 <form action="manage_cart.php" method="POST">
-                    <div>
+                    <div class="mb-4">
                         <button type="submit" class="btn btn-outline-danger mb-2 cart btn-sm mt-2" name="Add_To_Cart">Add To Cart</button>
                         <input type="hidden" name="Item_Name" value="Puma Gray Sports Shoes">
                         <input type="hidden" name="Price" value="$95">
                     </div>
                 </form>
             </div>
-            <div class="col-12 col-sm-3 mt-5">
+            <div class="col-12 col-sm-3">
                 <a href="product1.php" class="text-decoration-none">
                     <div class="card border-0">
                         <div class="card-img">
@@ -153,14 +180,14 @@
                     </div>
                 </a>
                 <form action="manage_cart.php" method="POST">
-                    <div>
+                    <div class="mb-4">
                         <button type="submit" class="btn btn-outline-danger mb-2 cart mt-2 btn-sm" name="Add_To_Cart">Add To Cart</button>
                         <input type="hidden" name="Item_Name" value="Black Printed T-Shirt">
                         <input type="hidden" name="Price" value="$55">
                     </div>
                 </form>
             </div>
-            <div class="col-12 col-sm-3 mt-5">
+            <div class="col-12 col-sm-3">
                 <a href="product1.php" class="text-decoration-none">
                     <div class="card border-0">
                         <div class="card-img">
@@ -172,14 +199,14 @@
                     </div>
                 </a>
                 <form action="manage_cart.php" method="POST">
-                    <div>
+                    <div class="mb-4">
                         <button type="submit" class="btn btn-outline-danger btn-sm mb-2 cart mt-2" name="Add_To_Cart">Add To Cart</button>
                         <input type="hidden" name="Item_Name" value="HRX Set of 3 Socks">
                         <input type="hidden" name="Price" value="$30">
                     </div>
                 </form>
             </div>
-            <div class="col-12 col-sm-3 mt-5">
+            <div class="col-12 col-sm-3">
                 <a href="product1.php" class="text-decoration-none">
                     <div class="card border-0">
                         <div class="card-img">
@@ -191,14 +218,14 @@
                     </div>
                 </a>
                 <form action="manage_cart.php" method="POST">
-                    <div>
+                    <div class="mb-4">
                         <button type="submit" class="btn btn-outline-danger mb-2 btn-sm cart mt-2" name="Add_To_Cart">Add To Cart</button>
                         <input type="hidden" name="Item_Name" value="Black Fossil Watch">
                         <input type="hidden" name="Price" value="$120">
                     </div>
                 </form>
             </div>
-            <div class="col-12 col-sm-3 mt-5">
+            <div class="col-12 col-sm-3">
                 <a href="product1.php" class="text-decoration-none">
                     <div class="card border-0">
                         <div class="card-img">
@@ -210,14 +237,14 @@
                     </div>
                 </a>
                 <form action="manage_cart.php" method="POST">
-                    <div>
+                    <div class="mb-4">
                         <button type="submit" class="btn btn-outline-danger mb-2 cart btn-sm mt-2" name="Add_To_Cart">Add To Cart</button>
                         <input type="hidden" name="Item_Name" value="Black Sportx Watch">
                         <input type="hidden" name="Price" value="$135">
                     </div>
                 </form>
             </div>
-            <div class="col-12 col-sm-3 mt-5">
+            <div class="col-12 col-sm-3">
                 <a href="product1.php" class="text-decoration-none">
                     <div class="card border-0">
                         <div class="card-img">
@@ -225,18 +252,18 @@
                         </div>
                         <p class="card-title text-muted mt-1">Black HRX Shoes</p>
                         <span class="star"><i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star-half-alt"></i></span>   
-                        <p class="card-text text-muted mt-2">$50.00</p>
+                        <p class="card-text text-muted mt-1">$50.00</p>
                     </div>
                 </a>
                 <form action="manage_cart.php" method="POST">
-                    <div>
+                    <div class="mb-4">
                         <button type="submit" class="btn btn-outline-danger mb-2 btn-sm cart mt-2" name="Add_To_Cart">Add To Cart</button>
                         <input type="hidden" name="Item_Name" value="Black HRX Shoes">
                         <input type="hidden" name="Price" value="$50">
                     </div>
                 </form>
             </div>
-            <div class="col-12 col-sm-3 mt-5">
+            <div class="col-12 col-sm-3">
                 <a href="product1.php" class="text-decoration-none">
                     <div class="card border-0">
                         <div class="card-img">
@@ -248,14 +275,14 @@
                     </div>
                 </a>
                 <form action="manage_cart.php" method="POST">
-                    <div>
+                    <div class="mb-4">
                         <button type="submit" class="btn btn-outline-danger mb-2 cart btn-sm mt-2" name="Add_To_Cart">Add To Cart</button>
                         <input type="hidden" name="Item_Name" value="Gray Nike Shoes">
                         <input type="hidden" name="Price" value="$55">
                     </div>
                 </form>
             </div>
-            <div class="col-12 col-sm-3 mt-5">
+            <div class="col-12 col-sm-3 mb-5">
                 <a href="product1.php" class="text-decoration-none">
                     <div class="card border-0">
                         <div class="card-img">
@@ -275,15 +302,92 @@
                 </form>
             </div>
         </div>
-        <div class="pg_btn">
-            <span>1</span>
-            <span class="ml-2">2</span>
-            <span class="ml-2">3</span>
-            <span class="ml-2">4</span>
-            <span class="ml-2">&#8594;</span>
+    </div>
+
+
+    <!--Smart Band Column-->
+    <div class="container-fluid mb-5" style="background-color: rgb(255,227,225); background: radial-gradient(#fff,#ffd6d6);">
+        <div class="container pb-5 c_4">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="images/exclusive.png" class="img-fluid d-block">
+                </div>
+                <div class="col-sm-6 my-auto">
+                    <p class="text-muted mt-5">Exclusive Available on Bhargav's</p>
+                    <h1 class="mb-4">Smart Band 4</h1>
+                    <p class="text-muted mt-2 mb-3">Success isn't always about greatness.it's about consistency.Consistent hard work gains success. Greatness will come.</p>
+                    <button type="button" class="btn btn-warning mt-2" data-target="#smart_band" data-toggle="modal"><span class="mx-2">Buy Now<i class="fas fa-long-arrow-alt-right ml-1"></i></span></button>
+                </div>
+            </div>
         </div>
     </div>
 
+    <!--Three Column Testimonial-->
+    <div class="container mb-5">
+        <div class="row c_5">
+            <div class="col-sm-4">
+                <a class="text-decoration-none">
+                    <div class="card mb-5" style="cursor:pointer;">
+                        <div class="card-body text-center">
+                            <i class="fas fa-quote-left fa-2x mb-3"></i>
+                            <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam autem voluptatum quis odio totam quae neque aliquam maiores sit, atque vel deleniti quas in?</p>
+                            <i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="far fa-star mb-4"></i>
+                            <img src="images/user-1.png" class="img-fluid d-block mx-auto w-25 mb-1">
+                            <p class="font-weight-bold text-dark">Sean Parker</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a class="text-decoration-none">
+                    <div class="card mb-5" style="cursor:pointer;">
+                        <div class="card-body text-center">
+                            <i class="fas fa-quote-left fa-2x mb-3"></i>
+                            <p class="text-muted">I am currently pursuing my Bachelor of Technology in Computer Science and looking for carrer in the field of Computer Science and Technology. I mostly work as a front end web developer well known on HTML5, CSS3, Bootstrap and JavaScript languages.</p>
+                            <i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="far fa-star mb-4"></i>
+                            <img src="images/bhargav.jpg" class="img-fluid d-block mx-auto w-25 mb-1">
+                            <p class="font-weight-bold text-dark">Bhargav Sonagara</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a class="text-decoration-none">
+                    <div class="card" style="cursor:pointer;">
+                        <div class="card-body text-center">
+                            <i class="fas fa-quote-left fa-2x mb-3"></i>
+                            <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam autem voluptatum quis odio totam quae neque aliquam maiores sit, atque vel deleniti quas in?</p>
+                            <i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="far fa-star mb-4"></i>
+                            <img src="images/user-3.png" class="img-fluid d-block mx-auto w-25 mb-1">
+                            <p class="font-weight-bold text-dark">Mabel Joe</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--Brand Column-->
+    <div class="container">
+        <div class="row justify-content-center c_7">
+            <div class="col-sm-2">
+                <a href="https://www.coca-colaindia.com/" class="text-decoration-none"><img src="images/logo-coca-cola.png" class="img-fluid d-block"></a>
+            </div>
+            <div class="col-sm-2">
+                <a href="https://www.godrej.com/" class="text-decoration-none"><img src="images/logo-godrej.png" class="img-fluid d-block"></a>
+            </div>
+            <div class="col-sm-2">
+                <a href="https://www.oppo.com/in/" class="text-decoration-none"><img src="images/logo-oppo.png" class="img-fluid d-block"></a>
+            </div>
+            <div class="col-sm-2">
+                <a href="https://www.paypal.com/in/home" class="text-decoration-none"><img src="images/logo-paypal.png" class="img-fluid d-block"></a>
+            </div>
+            <div class="col-sm-2">
+                <a href="https://www.philips.co.in/" class="text-decoration-none"><img src="images/logo-philips.png" class="img-fluid d-block"></a>
+            </div>
+        </div>
+    </div> 
+    
     <!--Modal-->
     <?php
         include_once 'modal.php';

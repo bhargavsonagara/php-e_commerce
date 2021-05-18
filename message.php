@@ -21,7 +21,7 @@
                         //     </script>
                         // ";
                         $_SESSION['user'] = $row['Name'];
-                        header("Location:index.php?Login_success");
+                        header("Location:home.php?Login_success");
                     }
                     else {
                         echo "
