@@ -13,8 +13,6 @@
 
     <!--Custom Style Link-->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="productStyle.css">
-    <link rel="stylesheet" href="product1.css">
 
     <!--Font Awesome Style Link-->
     <link rel="stylesheet" href="CSS/all.css">

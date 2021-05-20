@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="productStyle.css">
     <link rel="stylesheet" href="product1.css">
-    <link rel="stylesheet" href="cart.css">
     <link rel="stylesheet" href="index.css">
 
     <!--Font Awesome Style Link-->

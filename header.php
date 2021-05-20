@@ -29,7 +29,7 @@
                         $count=count($_SESSION['cart']);
                     }
                 ?>
-                <a href="mycart.php" class="text-decoration-none text-dark"><img src="images/cart.png" class="img-fluid img_1 d-md-block d-none mt-1 mr-0"></a>(<?php echo $count; ?>)
+                <a href="mycart.php" class="text-decoration-none text-dark"><img src="images/cart.png" class="img-fluid img_1 d-md-block d-none mt-1 mr-0"><span class="d-none">(<?php echo $count; ?>)</span></a>
             </ul>
         </div>
     

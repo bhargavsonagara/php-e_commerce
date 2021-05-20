@@ -59,6 +59,8 @@
     }
     else
     {
-        echo "message can't send";
+        echo "<script>alert('OOPS.... Incorrect.');
+            window.location.href = 'index.php';
+        </script>";
     }
 ?>  
