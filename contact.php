@@ -119,9 +119,9 @@
                     </a>
                     </li>
     
-                    <li><a href="mailto: 9828688989bs@gmail.com" class="text-decoration-none">
+                    <li><a href="mailto: bhargavsonagara1776@gmail.com" class="text-decoration-none">
                         <i class="fas fa-envelope mt-4 fa-2x" style="color: rgb(218, 83, 49);"></i>
-                        <p class="text-dark">9828688989bs@gmail.com</p>
+                        <p class="text-dark">bhargavsonagara1776@gmail.com</p>
                     </a>
                     </li>
                 </ul>

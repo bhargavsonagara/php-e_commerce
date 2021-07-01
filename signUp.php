@@ -82,7 +82,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-6 pl-0 pr-0">
-                                            <button type="button" class="btn btn-danger w-100">Cancel</button>
+                                            <button type="button" class="btn btn-danger w-100" onclick="cancel()">Cancel</button>
                                         </div>
                                         <div class="col-6 pl-0 pr-0">
                                             <button type="submit" name="submit" class="btn btn-success w-100">Submit</button>
@@ -180,6 +180,12 @@
             <p class="text-center text-muted p_1 pb-1" style="margin-bottom: -8px">Copyright &copy; 2020 - Designed and Developed by <a class="text-decoration-none text-muted">BHARGAV'S</a></p>
         </div>
     </footer>
+
+    <script>
+        const cancel = ()=>{
+            window.location.href = "index.php"
+        }
+    </script>
 
     <!--jquery Script Link-->
     <script src="js/jquery-3.5.1.js"></script>

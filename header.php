@@ -29,9 +29,9 @@
                         $count=count($_SESSION['cart']);
                     }
                 ?>
-                <a href="mycart.php" class="text-decoration-none text-dark"><img src="images/cart.png" class="img-fluid img_1 d-md-block d-none mt-1 mr-0"><span class="d-none">(<?php echo $count; ?>)</span></a>
+                <a href="mycart.php" class="text-decoration-none text-dark"><img src="images/cart.png" class="img-fluid img_1 d-md-block d-none mt-1 mr-0"><span class="d-none d-md-block" style="position: relative; top: -30px; right: -32px">(<?php echo $count; ?>)</span></a>
             </ul>
         </div>
     
-        <a href="mycart.php"><span class="d-md-none text-dark" style="position: relative; right:80px;">(<?php echo $count; ?>)</span><img src="images/cart.png" class="img-fluid img_1 mt-1 d-md-none c_12"></a>
+        <a href="mycart.php"><span class="d-md-none text-dark count_ic" style="position: relative; right:80px;">(<?php echo $count; ?>)</span><img src="images/cart.png" class="img-fluid img_1 mt-1 d-md-none c_12"></a>
     </div>
